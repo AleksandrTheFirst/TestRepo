@@ -14,17 +14,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
 import static org.openqa.selenium.OutputType.*;
 
-public class LoginToGoogle {
+public class CheckMailInGoogle {
     FirefoxDriver wd;
     
     @BeforeMethod
     public void setUp() throws Exception {
         wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    }
-    
-    @Test
-    public void LoginToGoogle() {
         wd.get("https://www.google.ru/");
         wd.findElement(By.id("gb_70")).click();
         wd.findElement(By.id("identifierId")).click();
@@ -45,6 +41,12 @@ public class LoginToGoogle {
 
     }
     
+    @Test
+    public void testCheckMailInGoogle() {
+        wd.findElement(By.linkText("Почта")).click();
+
+    }
+
     @AfterMethod
     public void tearDown() {
         wd.quit();
