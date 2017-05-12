@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8caef7a7-3a36-40c3-b33b-04cfcb2cbe85" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/NewAndConfirmPass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/RegisterInGoogle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/CheckMailInGoogle.java" afterPath="$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/CheckMailInGoogle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -33,15 +36,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CheckMailInGoogle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CheckMailInGoogle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/CheckMailInGoogle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="68" column="50" lean-forward="false" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+            <state relative-caret-position="273">
+              <caret line="43" column="44" lean-forward="false" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
               <folding>
-                <element signature="e#2249#2250#0" expanded="true" />
-                <element signature="e#2309#2310#0" expanded="true" />
-                <marker date="1494584452877" expanded="true" signature="1838:1857" ph="..." />
+                <element signature="method#setUp#0;class#CheckMailInGoogle#0" expanded="false" />
+                <element signature="method#login#0;class#CheckMailInGoogle#0" expanded="false" />
+                <element signature="method#testCheckMailPageInGoogle#0;class#CheckMailInGoogle#0" expanded="false" />
+                <element signature="method#testOpenLetterInMailBox#0;class#CheckMailInGoogle#0" expanded="false" />
+                <element signature="method#logOut#0;class#CheckMailInGoogle#0" expanded="false" />
+                <element signature="method#isAlertPresent#0;class#CheckMailInGoogle#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Registration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/Registration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+              <folding>
+                <element signature="e#1328#1329#0" expanded="true" />
+                <element signature="e#1389#1390#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewAndConfirmPass.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/NewAndConfirmPass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterInGoogle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/RegisterInGoogle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -781,7 +822,10 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/sasha/testproject/FirstProgramTests.java" />
         <option value="$PROJECT_DIR$/../Google-web-tests/build.gradle" />
         <option value="$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/LoginToGoogle.java" />
+        <option value="$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/Check.java" />
         <option value="$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/CheckMailInGoogle.java" />
+        <option value="$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/RegisterInGoogle.java" />
+        <option value="$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/Registration.java" />
       </list>
     </option>
   </component>
@@ -912,7 +956,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CheckMailInGoogle.testOpenLetterInMailBox">
+  <component name="RunManager">
     <configuration default="false" name="FirstProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="ru.sasha.testproject.FirstProgram" />
@@ -1273,9 +1317,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.CheckMailInGoogle.testOpenLetterInMailBox" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.CheckMailInGoogle.testCheckMailPageInGoogle" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.CheckMailInGoogle" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.CheckMailInGoogle" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.CheckMailInGoogle.testOpenLetterInMailBox" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.CheckMailInGoogle.testCheckMailPageInGoogle" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.FirstProgramTests" />
         <item index="4" class="java.lang.String" itemvalue="Application.FirstProgram" />
       </list>
@@ -1295,34 +1339,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 12h 31m 27s.xml">
+    <history-entry file="CheckMailInGoogle - 2017.05.12 at 14h 31m 24s.xml">
+      <configuration name="CheckMailInGoogle" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 34m 14s.xml">
       <configuration name="CheckMailInGoogle.testOpenLetterInMailBox" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 12h 36m 18s.xml">
+    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 35m 45s.xml">
       <configuration name="CheckMailInGoogle.testOpenLetterInMailBox" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 12h 39m 59s.xml">
+    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 39m 42s.xml">
       <configuration name="CheckMailInGoogle.testOpenLetterInMailBox" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 12h 41m 20s.xml">
+    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 39m 44s.xml">
       <configuration name="CheckMailInGoogle.testOpenLetterInMailBox" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 12h 53m 24s.xml">
+    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 40m 26s.xml">
       <configuration name="CheckMailInGoogle.testOpenLetterInMailBox" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 03m 00s.xml">
+    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 40m 52s.xml">
       <configuration name="CheckMailInGoogle.testOpenLetterInMailBox" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 11m 18s.xml">
+    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 43m 14s.xml">
       <configuration name="CheckMailInGoogle.testOpenLetterInMailBox" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 13m 47s.xml">
+    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 44m 07s.xml">
       <configuration name="CheckMailInGoogle.testOpenLetterInMailBox" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 17m 09s.xml">
-      <configuration name="CheckMailInGoogle.testOpenLetterInMailBox" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 18m 21s.xml">
+    <history-entry file="CheckMailInGoogle_testOpenLetterInMailBox - 2017.05.12 at 13h 50m 26s.xml">
       <configuration name="CheckMailInGoogle.testOpenLetterInMailBox" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1333,7 +1377,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1366,7 +1410,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1437,15 +1481,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/Check.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/RegisterInGoogle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/CheckMailInGoogle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="68" column="50" lean-forward="false" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+        <state relative-caret-position="273">
+          <caret line="43" column="44" lean-forward="false" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
           <folding>
-            <element signature="e#2249#2250#0" expanded="true" />
-            <element signature="e#2309#2310#0" expanded="true" />
-            <marker date="1494584452877" expanded="true" signature="1838:1857" ph="..." />
+            <element signature="method#setUp#0;class#CheckMailInGoogle#0" expanded="false" />
+            <element signature="method#login#0;class#CheckMailInGoogle#0" expanded="false" />
+            <element signature="method#testCheckMailPageInGoogle#0;class#CheckMailInGoogle#0" expanded="false" />
+            <element signature="method#testOpenLetterInMailBox#0;class#CheckMailInGoogle#0" expanded="false" />
+            <element signature="method#logOut#0;class#CheckMailInGoogle#0" expanded="false" />
+            <element signature="method#isAlertPresent#0;class#CheckMailInGoogle#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <folding>
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Google-web-tests/src/test/java/ru/sasha/googletests/NewAndConfirmPass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

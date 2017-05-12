@@ -3,16 +3,11 @@ package ru.sasha.googletests;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import static org.testng.Assert.*;
 
 import java.util.concurrent.TimeUnit;
-import java.util.Date;
-import java.io.File;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
-import static org.openqa.selenium.OutputType.*;
 
 public class CheckMailInGoogle {
     FirefoxDriver wd;
@@ -22,15 +17,15 @@ public class CheckMailInGoogle {
         wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         wd.get("https://www.google.ru/");
-        login();
+        login("alexz198380@gmail.com", "Pf[fhjd321");
 
     }
 
-    private void login() {
+    private void login(String username, String password) {
         wd.findElement(By.id("gb_70")).click();
         wd.findElement(By.id("identifierId")).click();
         wd.findElement(By.id("identifierId")).clear();
-        wd.findElement(By.id("identifierId")).sendKeys("alexz198380@gmail.com");
+        wd.findElement(By.id("identifierId")).sendKeys(username);
         wd.findElement(By.id("identifierId")).click();
         wd.findElement(By.id("identifierId")).sendKeys("\n");
         try {
@@ -40,7 +35,7 @@ public class CheckMailInGoogle {
         }
         wd.findElement(By.name("password")).click();
         wd.findElement(By.name("password")).clear();
-        wd.findElement(By.name("password")).sendKeys("Pf[fhjd321");
+        wd.findElement(By.name("password")).sendKeys(password);
         wd.findElement(By.name("password")).click();
         wd.findElement(By.name("password")).sendKeys("\n");
     }
@@ -56,12 +51,10 @@ public class CheckMailInGoogle {
         gotoMailPage();
         openEmail();
         logOut();
-//        Thread.sleep(5000);
     }
 
     private void openEmail() {
-        wd.findElement(By.className("aKw")).click();
-        wd.findElement(By.xpath(".//*[@id=':4r']")).click();
+        wd.findElement(By.xpath("//td[@id=':55']/div/div/div/span[2]")).click();
     }
 
     private void logOut() {
