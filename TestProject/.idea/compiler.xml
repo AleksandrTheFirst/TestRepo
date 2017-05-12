@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="Google-web-tests_main" target="1.8" />
+      <module name="Google-web-tests_test" target="1.8" />
       <module name="TestProject_main" target="1.8" />
       <module name="TestProject_test" target="1.8" />
     </bytecodeTargetLevel>

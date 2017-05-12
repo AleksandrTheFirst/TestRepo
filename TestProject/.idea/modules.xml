@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Google-web-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/Google-web-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Google-web-tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Google-web-tests_main.iml" group="Google-web-tests" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Google-web-tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Google-web-tests_test.iml" group="Google-web-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/TestProject.iml" filepath="$PROJECT_DIR$/.idea/TestProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestProject_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TestProject_main.iml" group="TestProject" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestProject_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TestProject_test.iml" group="TestProject" />
