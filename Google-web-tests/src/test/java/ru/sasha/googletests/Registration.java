@@ -8,7 +8,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
-import ru.sasha.googletests.NewAndConfirmPass;
 
 public class Registration {
     FirefoxDriver wd;
@@ -26,7 +25,7 @@ public class Registration {
         fillLastName("Test2");
         fillNewGmailAccountField("testtesttest");
         createAndConfirmPassword(new NewAndConfirmPass("111222333111", "111222333111"));
-        birthdayDate("11", "2000", "'февраль'");
+        birthdayDate(new SetDateOfBirth("11", "2000", "'февраль'"));
         selectGender();
         submitRegister();
         confirmRegister();
@@ -74,15 +73,15 @@ public class Registration {
         wd.findElement(By.id("FirstName")).sendKeys(fistName);
     }
 
-    private void birthdayDate(String dd, String yyyy, final String month) {
+    private void birthdayDate(SetDateOfBirth setDateOfBirth) {
         wd.findElement(By.id("birthday-placeholder")).click();
         wd.findElement(By.id("BirthDay")).click();
         wd.findElement(By.id("BirthDay")).clear();
-        wd.findElement(By.id("BirthDay")).sendKeys(dd);
-        wd.findElement(By.xpath("//div[@id=':2']//div[.=" + month + "]")).click();
+        wd.findElement(By.id("BirthDay")).sendKeys(setDateOfBirth.getDd());
+        wd.findElement(By.xpath("//div[@id=':2']//div[.=" + setDateOfBirth.getMonth() + "]")).click();
         wd.findElement(By.id("BirthYear")).click();
         wd.findElement(By.id("BirthYear")).clear();
-        wd.findElement(By.id("BirthYear")).sendKeys(yyyy);
+        wd.findElement(By.id("BirthYear")).sendKeys(setDateOfBirth.getYyyy());
     }
 
     @AfterMethod
