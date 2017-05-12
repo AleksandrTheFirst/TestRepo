@@ -6,6 +6,11 @@ package ru.sasha.testproject;
 public class FirstProgram {
 
     public static void main(String[] args) {
-        System.out.println("Hello");
+
+    SendWord prog = new SendWord("Ta-da!!");
+
+        System.out.println(prog.writeWord());
+
+
     }
 }
