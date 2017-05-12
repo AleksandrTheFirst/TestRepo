@@ -22,6 +22,11 @@ public class CheckMailInGoogle {
         wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         wd.get("https://www.google.ru/");
+        login();
+
+    }
+
+    private void login() {
         wd.findElement(By.id("gb_70")).click();
         wd.findElement(By.id("identifierId")).click();
         wd.findElement(By.id("identifierId")).clear();
@@ -38,13 +43,34 @@ public class CheckMailInGoogle {
         wd.findElement(By.name("password")).sendKeys("Pf[fhjd321");
         wd.findElement(By.name("password")).click();
         wd.findElement(By.name("password")).sendKeys("\n");
+    }
+
+    @Test
+    public void testCheckMailPageInGoogle() {
+        gotoMailPage();
 
     }
-    
-    @Test
-    public void testCheckMailInGoogle() {
-        wd.findElement(By.linkText("Почта")).click();
 
+    @Test
+    public void testOpenLetterInMailBox () throws InterruptedException {
+        gotoMailPage();
+        openEmail();
+        logOut();
+//        Thread.sleep(5000);
+    }
+
+    private void openEmail() {
+        wd.findElement(By.className("aKw")).click();
+        wd.findElement(By.xpath(".//*[@id=':4r']")).click();
+    }
+
+    private void logOut() {
+        wd.findElement(By.xpath(".//*[@id='gb']/div[1]/div[1]/div[2]/div[4]/div[1]/a/span")).click();
+        wd.findElement(By.xpath(".//*[@id='gb_71']")).click();
+    }
+
+    private void gotoMailPage() {
+        wd.findElement(By.linkText("Почта")).click();
     }
 
     @AfterMethod
